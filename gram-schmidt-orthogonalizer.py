@@ -14,7 +14,10 @@ def parse_vector(string):
     """
     return tuple(map(parse_expr, string.replace(' ', '').split(',')))
 
-opening = """Gram-Schmidt orthogonalizer ver 2.1."""
+opening = """
+Gram-Schmidt orthogonalizer ver 2.1.
+Type 'quit' to exit the program, and 'clear' to clear the screen.
+"""
 
 def clear_screen():
     """
@@ -46,6 +49,9 @@ def main():
             number_of_vectors = input(">>> ")
             if number_of_vectors == "quit":
                 raise SystemExit
+            elif number_of_vectors == "clear":
+                clear_screen()
+                continue
             number_of_vectors = int(number_of_vectors)
             assert number_of_vectors > 0
         except SystemExit:
@@ -82,6 +88,9 @@ def main():
                     break
                 elif string == "quit":
                     raise SystemExit
+                elif string == "clear":
+                    clear_screen()
+                    continue
 
                 vector = parse_vector(string)
                 list_of_vectors.append(vector)
@@ -124,7 +133,7 @@ def main():
     print()
 
     for i in range(number_of_vectors):
-        print(f"Step {i}:")
+        print(f"Step {i+1}:")
         print()
         if i > 0:
             print("Calculating:")
@@ -149,7 +158,7 @@ def main():
         print()
 
     else:
-        print(f"Step {number_of_vectors}:")
+        print(f"Step {number_of_vectors+1}:")
         print()
         print("Calculating:")
         print(f"    ||w{number_of_vectors}||^2 = {norms_sq[-1]}")
