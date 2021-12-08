@@ -15,7 +15,7 @@ def parse_vector(string):
     return tuple(map(parse_expr, string.replace(' ', '').split(',')))
 
 opening = """
-Gram-Schmidt orthogonalizer ver 2.1.
+Gram-Schmidt orthogonalizer.
 Type 'quit' to exit the program, and 'clear' to clear the screen.
 """
 
