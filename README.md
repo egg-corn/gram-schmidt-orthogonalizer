@@ -41,13 +41,13 @@ and this will appear:
 ```
 Let a1, ..., a3 be the vector(s) (1, 2, 0), (1, 1, 0), (1, 0, 1) respectively.
 
-Step 0:
+Step 1:
 
 Define:
     w1 := a1 
         = (1, 2, 0) 
 
-Step 1:
+Step 2:
 
 Calculating:
     ||w1||^2 = 5
@@ -58,7 +58,7 @@ Define:
         = (1, 1, 0) - (3)/(5)*(1, 2, 0) 
         = (2/5, -1/5, 0)
 
-Step 2:
+Step 3:
 
 Calculating:
     ||w2||^2 = 1/5
@@ -70,7 +70,7 @@ Define:
         = (1, 0, 1) - (1)/(5)*(2/5, -1/5, 0) - (2/5)/(1/5)*(2/5, -1/5, 0) 
         = (0, 0, 1)
 
-Step 3:
+Step 4:
 
 Calculating:
     ||w3||^2 = 1
