@@ -7,10 +7,14 @@ pip install sympy
 ```
 to install SymPy.
 
-Example, I want to perform Gram-Schmidt Orthogonalization on the vectors (1, 2, 0), (1, 1, 0), (1, 0, 1).  We run the script, type 3 (number of vectors), key in our vectors as such:
+In the program, enter 'clear' to clear the screen, and 'quit' to exit the program. You can also type delete when  entering your vectors to delete the last entry you keyed in.
+
+As an example, I want to perform Gram-Schmidt Orthogonalization on the vectors (1, 2, 0), (1, 1, 0), (1, 0, 1).  We run the script, type 3 (number of vectors), key in our vectors as such:
 
 ```
-Gram-Schmidt orthogonalizer ver 2.1.
+Gram-Schmidt orthogonalizer.
+Type 'quit' to exit the program, and 'clear' to clear the screen.
+
 
 Start by inputting the number of vectors, eg. 4
 >>> 3
@@ -79,3 +83,5 @@ Define:
 to obtain a basis T := {v1, ..., v3} of orthonormal vectors with the same column space as {a1,...,a3}.
 
 ```
+
+NOTE: the vectors must be linearly dependent, otherwise the program will simply exit. 
