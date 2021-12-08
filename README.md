@@ -84,4 +84,4 @@ to obtain a basis T := {v1, ..., v3} of orthonormal vectors with the same column
 
 ```
 
-NOTE: the vectors must be linearly dependent, otherwise the program will simply exit. 
+NOTE: the vectors must be linearly independent, otherwise the program will simply exit. 
